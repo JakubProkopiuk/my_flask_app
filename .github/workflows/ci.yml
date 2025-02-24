@@ -27,6 +27,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install Flask
 
+    - name: Show installed packages
+      run: |
+        pip list
+
     - name: Lint with flake8
       run: |
         pip install flake8
